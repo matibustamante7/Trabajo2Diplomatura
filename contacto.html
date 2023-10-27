@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Homework2</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_img">
+                <a href="/index.html"><img src="./img/logo.png" class="logo_laliga" alt="La Liga"></a>
+            </div>
+            <div class="navbar_menu">
+                <ul class="navbar_menu_ul">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/galeria.html">Galeria de fotos</a></li>
+                    <li><a href="/Nosotros.html">Nosotros</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+            </div>
+        </div>
+        <div class="content_1">
+            <h1>Formulario de Contacto</h1>
+
+        </div>
+
+    </header>
+    <main>
+        <form action="procesar_formulario.php" method="post" id="forumulario">
+            <h2>Contacto</h2>
+            <div class="section">
+                <div class="sub_section">
+                    <input type="text" id="nombre" class="label_title label" placeholder="Nombre" name="nombre"
+                        required>
+
+                    <input type="email" id="email" name="email" class="label_title label" placeholder="Email" required>
+
+                    <input type="tel" id="telefono" class="label_title label" name="telefono" placeholder="Teléfono">
+                </div>
+                <div class="sub_section">
+
+                    <textarea id="comentario" name="comentario" rows="6" cols="25" class="label_title textarea"
+                        placeholder="Escribe tu consulta..."></textarea>
+
+                </div>
+            </div>
+
+            <div class="section under">
+
+                <div class="sub_section">
+
+
+                    <label class="label_title title">Preferencias:</label>
+
+                    <label for="opcion1" class="label_title radio_check_options">
+                        Opción 1
+                        <input type="radio" id="opcion1" name="preferencias" value="opcion1">
+                    </label>
+                    <label for="opcion2" class="label_title radio_check_options">
+                        Opción 2
+                        <input type="radio" id="opcion2" name="preferencias" value="opcion2">
+                    </label>
+                    <label for="opcion3" class="label_title radio_check_options">
+                        Opción 3
+                        <input type="radio" id="opcion3" name="preferencias" value="opcion3">
+                    </label>
+
+                </div>
+
+
+                <div class="sub_section radio">
+
+                    <label class="label_title title">Intereses:</label>
+
+                    <label for="interes1" class="label_title radio_check_options">Interés 1<input type="checkbox"
+                            id="interes1" name="intereses[]" value="interes1">
+                    </label>
+                    <label for="interes2" class="label_title radio_check_options">Interés 2<input type="checkbox"
+                            id="interes2" name="intereses[]" value="interes2">
+                    </label>
+                    <label for="interes3" class="label_title radio_check_options">Interés 3<input type="checkbox"
+                            id="interes3" name="intereses[]" value="interes3">
+                    </label>
+
+                </div>
+                <div class="sub_section selector">
+                    <label for="selector" class="label_title title">Seleccione una opción:</label>
+                    <select id="selector" name="selector">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="submit">Enviar</button>
+
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="navbar_menu menu_footer">
+            <ul class="navbar_menu_ul">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/galeria.html">Galeria de fotos</a></li>
+                <li><a href="/Nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>Desarrollado por <a href="https://github.com/matibustamante7" target="_blank">Matias Bustamante</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

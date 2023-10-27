@@ -1,0 +1,54 @@
+
+.content_1 h1{
+    font-size: 60px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.title_h2{
+    font-size: 42px;
+    margin: 2rem;
+}
+.box_container_players{
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    width: 1200px;
+}
+.player{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 2px 12px 2px rgb(165, 165, 165);
+    border-radius: .55rem;
+    transition: .3s;
+}
+.player:hover{
+    color: var(--blue);
+    cursor: pointer;
+    box-shadow: 4px 4px 12px 4px rgb(110, 110, 110);;
+}
+.player_img{
+    border-radius: .55rem .55rem 0 0;
+    position: relative;
+    max-height: 450px;
+}
+
+.player_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.player_flex p{
+    font-size: 32px;
+    font-weight: 700;
+}
