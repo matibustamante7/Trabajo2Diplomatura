@@ -47,14 +47,14 @@ h2 {
 .card:hover .white{
     color: var(--white);
 }
-p {
+.card_content p {
     position: absolute;
     opacity: 0;
     max-width: 80%;
     transition: opacity 0.3s ease-out;
 }
 
-p {
+.card_content p {
     inset: auto auto 20px 30px;
     font-weight: 500;
 }
