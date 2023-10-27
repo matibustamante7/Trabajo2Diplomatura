@@ -19,7 +19,6 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
-    width: 1200px;
 }
 .player{
     width: 300px;
@@ -51,4 +50,29 @@
 .player_flex p{
     font-size: 32px;
     font-weight: 700;
+}
+
+
+@media (max-width:420px) {
+    .logo_laliga{
+        width: 80px;
+    }
+    .navbar_menu_ul li a{
+        font-size: 10px;
+        font-weight:600;
+    }
+    .content h1{
+        width: 330px;
+        font-size: 30px;
+    }
+    #btn{
+        margin-top: 2rem;
+    }
+    .title_h2{
+        font-size: 26px;
+    }
+    .box_container_players{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -1,7 +1,6 @@
 .card_container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4rem;
@@ -78,3 +77,34 @@ h2 {
     opacity: 1;
 }
 
+@media (max-width:420px) {
+    .logo_laliga{
+        width: 80px;
+    }
+    .navbar_menu_ul li a{
+        font-size: 10px;
+        font-weight:600;
+    }
+    .content h1{
+        width: 330px;
+        font-size: 30px;
+    }
+    #btn{
+        margin-top: 2rem;
+    }
+    .card_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        margin: 14rem -30px;
+    }
+    .card{
+        min-height: 420px;
+        max-width: 300px;
+    }
+    .card:hover h2 {
+        inset: auto auto 70% 30px;
+    }
+}
