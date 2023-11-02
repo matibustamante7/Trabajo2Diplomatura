@@ -13,6 +13,7 @@
 .box_container_players{
     margin: auto;
     padding: 2rem;
+    width: 70%;;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
